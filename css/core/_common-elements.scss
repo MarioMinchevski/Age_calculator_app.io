@@ -1,0 +1,28 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: $color-body;
+    font-family: $font-family-base;
+}
+
+
+h2 {
+    font-weight: $font-weight-extra-bold;
+    font-size: $font-size-headidng-main;
+    line-height: 110%;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    span {
+        color: $color-secondary;
+    }
+
+
+    @include tablet-mobile {
+        font-size: $font-size-headidng-main-medium;
+    }
+}
