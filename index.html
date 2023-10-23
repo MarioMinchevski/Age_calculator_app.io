@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Age calculator app | FEM</title>
+</head>
+
+<body>
+
+</body>
+<div class="container">
+    <form action="/" class="form">
+        <div class="inputs-container">
+            <div class="form-group">
+                <label for="day">day</label>
+                <input type="number" name="day" id="day" placeholder="dd" class="form-control">
+                <div class="message"></div>
+            </div>
+            <div class="form-group">
+                <label for="month">month</label>
+                <input type="number" name="month" id="month" placeholder="mm" class="form-control">
+                <div class="message"></div>
+            </div>
+            <div class="form-group">
+                <label for="year">year</label>
+                <input type="number" name="year" id="year" placeholder="yyyy" class="form-control">
+                <div class="message"></div>
+            </div>
+        </div>
+        <div class="btn-line-container">
+            <div class="line"></div>
+            <button type="submit" class="btn"><img src="./assets/images/icon-arrow.svg" alt="arrow"></button>
+        </div>
+    </form>
+    <div class="result-box">
+        <h2><span id="years-result">- -</span> years</h2>
+        <h2><span id="months-result">- -</span> months</h2>
+        <h2><span id="days-result">- -</span> days</h2>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</html>
